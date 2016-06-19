@@ -60,4 +60,5 @@ def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
 	f.close()
 	
     return "ok"
-getm3()
+while True:
+	getm3()

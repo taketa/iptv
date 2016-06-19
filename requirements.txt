@@ -1,0 +1,16 @@
+Flask==0.10.1
+Jinja2==2.8
+MarkupSafe==0.23
+Werkzeug==0.11.9
+argparse==1.2.1
+clipboard==0.0.4
+gunicorn==19.5.0
+itsdangerous==0.24
+langdetect==1.0.6
+oauthlib==1.1.2
+pyperclip==1.5.27
+requests==2.10.0
+requests-oauthlib==0.6.1
+six==1.10.0
+tweepy==3.5.0
+wsgiref==0.1.2

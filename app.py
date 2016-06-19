@@ -40,9 +40,9 @@ def list():
         else:
             test=test[0].split(" ")[-2]
             if int(test)>50  and "Unsupported codec" not in stderr:
-                return  "good"
+                return  "good %s" % test
             else: 
-                return "bad"
+                return "bad %s" % test
     
     # def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
     #     m3=open("app/git/forTest.m3u")

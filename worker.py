@@ -11,6 +11,7 @@ def pushHer():
 	os.chdir("gitPush")
 	call("git init",shell=True)
 	call("git add .",shell=True)
+	call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
 	call('git config --global user.email "853211b@gmail.com" && git config --global user.name "Your Name"',shell=True) 
 	call("git pull origin master",shell=True)
 	call('git commit -am "ok"',shell=True)

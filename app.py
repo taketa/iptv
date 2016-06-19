@@ -67,20 +67,17 @@ def list():
             f=open('iptv.m3u', 'a')
             f.write("#EXTINF:-1,"+i+"\n"+good[i]+"\n")
             f.close()
-        # ssh=open(".ssh/id_rsa.pub","w")
-        # ssh.write("ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5uihQFeVnpj+ZapmKFJO1K5AjTBujXs22wN+yJklx0YCI7statYU0oyhs8cBKG09V+fhFYSLZA494furJqI+k+h7O1ho8PSf+iDTauiP8V9kyniAiJ0FabSU/pnooxMOVtxmpjBqHGp2MYYiYKzzsSxusYbK6xo4gOaWZzbPy5v8rBsIGbQh1mcw/Jy+81PkwmtULFY58UXTBRjSV+pcK+LG9OEJqa5QRzcnEHq98lsx424QrcVexHyllzmlWq8Qwgvz7cHUpXsZWmIF0xT9yUW7UEKJsXbv8AJdlxULbU9ExQcu/6xCf8fOuZfMH7iBJrauXYSQT7wfaKrAvTS6j taketa@taketa")
-        # ssh.close()
-        # os.chdir("git")
+
         
         
-        # call(["git", "remote", "add", "taketa", "git@github.com:taketa/iptv.git"])
-        # call(["git","add","--all"]) 
-        # call(["git","commit","-am","ok"])
-        # call(["git","pull","taketa","master"])
+        call(["git", "remote", "add", "taketa", "git@github.com:taketa/iptv.git"])
+        call(["git","add","--all"]) 
+        call(["git","commit","-am","ok"])
+        call(["git","pull","taketa","master"])
         
         
 
-        # call(["git","push","-u","taketa","master"])
+        call(["git","push","-u","taketa","master"])
         return "ok"
     getm3()
 

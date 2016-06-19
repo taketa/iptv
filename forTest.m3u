@@ -23,3 +23,19 @@ rtmp://213.174.8.15:1935/live/danio
 rtmp://77.240.152.166/live/live1
 #EXTINF:-1,24 Украiна
 http://109.68.190.192:1935/WEB_Ukraine24/Ukraine24.stream/playlist.m3u8
+#EXTINF:-1,9 Волна
+http://91.219.136.73:4022/udp/239.1.0.14:1234
+#EXTINF:-1,9 волна
+http://win.cdn.bonus-tv.ru/TVB7/9volna/playlist.m3u8?slynet.tv FreeSlyNet IPTV
+#EXTINF:-1,9 волна
+http://android.cdn.bonus-tv.ru:8080/9volna/index.m3u8
+#EXTINF:-1,AMC[PremiumSlyNet]
+http://slynet.online:12345/errorslynet
+#EXTINF:-1,AMEDIA 1
+http://91.219.136.73:4022/udp/235.1.0.78:32768
+#EXTINF:-1,AMEDIA Hit HD[PremiumSlyNet]
+http://slynet.online:12345/errorslynet
+#EXTINF:-1,AMEDIA PREMIUM HD [PremiumSlyNet]
+http://slynet.online:12345/errorslynet
+#EXTINF:-1,ANI
+http://hlstv.kuz.211.ru/239.211.211.98/stream.m3u8?slynet.tv FreeSlyNet IPTV

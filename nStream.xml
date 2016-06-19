@@ -27,6 +27,18 @@
 <stream_url><![CDATA[rtmp://77.240.152.166/live/live1]]></stream_url>
 </channel>
 <channel>
+<title><![CDATA[9 волна]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://android.cdn.bonus-tv.ru:8080/9volna/index.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[ANI]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://hlstv.kuz.211.ru/239.211.211.98/stream.m3u8?slynet.tv FreeSlyNet IPTV]]></stream_url>
+</channel>
+<channel>
 <title><![CDATA[2+2/9 канал UA]]></title>
 <logo_30x30><![CDATA[]]></logo_30x30>
 <description></description>

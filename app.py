@@ -69,7 +69,7 @@ def list():
             f.close()
 
         
-        
+        call(["git", "init"])
         call(["git", "remote", "add", "taketa", "git@github.com:taketa/iptv.git"])
         call(["git","add","--all"]) 
         call(["git","commit","-am","ok"])

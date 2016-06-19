@@ -69,9 +69,9 @@ def list():
             f.close()
 
         
-        call(["git  init"])
-        call(["git remote add origin git@github.com:taketa/iptv.git"])
-        call(["git add iptv.m3u nStream.xml"])
+        call("git  init",shell=True)
+        call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
+        call("git add iptv.m3u nStream.xml",shell=True)
        
         call('git config --global user.email "you@example.com" && git config --global user.name "Your Name"',shell=True) 
         
@@ -80,7 +80,7 @@ def list():
         
         
 
-        call("git push origin master")
+        call("git push origin master",shell=True)
         return "ok"
     getm3()
 

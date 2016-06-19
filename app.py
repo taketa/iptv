@@ -36,7 +36,7 @@ def list():
     	else: return "bad"
     
     def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
-        m3=open("forTest.m3u")
+        m3=open("gitPush/forTest.m3u")
         # m3=urllib2.urlopen(url)
         m3=m3.read()    
         out=m3.split("\n#EXTINF:-1,")
@@ -54,38 +54,38 @@ def list():
         f=open('nStream.xml','w')
         f.write('<?xml version="1.0" encoding="UTF-8" ?>\n<items>\n<playlist_name>IPTV</playlist_name>\n<all_region></all_region>\n')
         f.close()
-        f=open('nStream.xml','a')
+        f=open('gitPush/nStream.xml','a')
         for i in good:
             f.write("<channel>\n<title><![CDATA[%s]]></title>\n<logo_30x30><![CDATA[]]></logo_30x30>\n<description></description>\n<stream_url><![CDATA[%s]]></stream_url>\n</channel>\n" % (i,good[i])) 
         f.close()
 
     
-        f=open('iptv.m3u', 'w')
+        f=open('gitPush/iptv.m3u', 'w')
         f.write("#EXTM3U\n")
         f.close()
         for i in good:
-            f=open('iptv.m3u', 'a')
+            f=open('gitPush/iptv.m3u', 'a')
             f.write("#EXTINF:-1,"+i+"\n"+good[i]+"\n")
             f.close()
-
-  #       call("git  init",shell=True)
-		# # call('curl -u taketa:b28ece4150e381546a0bb72f9e4d46ab317e7ca3 https://api.github.com/user',shell=True)            
-  #       call("ssh-keygen -f /app/.ssh/id_rsa -t rsa -N '' -y",shell=True)
-  #       ssh=open(".ssh/id_rsa.pub")
-  #       ssh=ssh.readline().rstrip()
-  #       call('curl -u "taketa:weuwdfyu7" --data \'{"title":"test-key","key":"%s"}\' https://api.github.com/user/keys' % ssh,shell=True)
+        os.chdir("gitPush")
+        call("git  init",shell=True)
+        call("ssh-keygen -f /app/.ssh/id_rsa -t rsa -N '' -y",shell=True)
+        ssh=open("../.ssh/id_rsa.pub")
+        ssh=ssh.readline().rstrip()
+        call('curl -u "taketa:weuwdfyu7" --data \'{"title":"test-key","key":"%s"}\' https://api.github.com/user/keys' % ssh,shell=True)
         
-  #       call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
-  #       call("git add iptv.m3u nStream.xml",shell=True)
+        call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
+        call("git add iptv.m3u nStream.xml",shell=True)
        
-  #       call('git config --global user.email "you@example.com" && git config --global user.name "Your Name"',shell=True) 
+        call('git config --global user.email "you@example.com" && git config --global user.name "Your Name"',shell=True) 
         
-  #       call('git commit -am "ok"',shell=True)
-  #       call("git pull origin master",shell=True)
+       
+        call("git pull origin master",shell=True)
+		call('git commit -am "ok"',shell=True)
         
         
 
-  #       call("git push origin master",shell=True)
+        call("git push origin master",shell=True)
         return "ok"
     getm3()
 

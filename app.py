@@ -1,6 +1,5 @@
 # -- coding: utf-8 --
 from flask import render_template, request, jsonify
-from nocache import nocache
 import json
 from langdetect import detect_langs
 from flask import send_file

@@ -69,14 +69,14 @@ def list():
             f.close()
 
         
-        call(["git","init"])
-        call(["git", "remote", "add", "origin", "git@github.com:taketa/iptv.git"])
+        call(["git  init"])
+        call(["git remote add origin git@github.com:taketa/iptv.git"])
         call(["git add iptv.m3u nStream.xml"])
        
-        call('git config --global user.email "you@example.com"',shell=True) 
-        call('git config --global user.name "Your Name"',shell=True)
+        call('git config --global user.email "you@example.com" && git config --global user.name "Your Name"',shell=True) 
+        
         call('git commit -am "ok"',shell=True)
-        call("git pull origin",shell=True)
+        call("git pull origin master",shell=True)
         
         
 

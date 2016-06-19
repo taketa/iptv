@@ -59,3 +59,4 @@ def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
     return "ok"
 
 getm3()
+pushHer()

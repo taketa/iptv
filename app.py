@@ -36,7 +36,7 @@ def list():
     	else: return "bad"
     
     def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
-        m3=open("forTest.m3u")
+        m3=open("git/forTest.m3u")
         # m3=urllib2.urlopen(url)
         m3=m3.read()    
         out=m3.split("\n#EXTINF:-1,")
@@ -51,10 +51,10 @@ def list():
             if test=="good":
                 good[i[0]]=i[1]
         
-        f=open('nStream.xml','w')
+        f=open('git/nStream.xml','w')
         f.write('<?xml version="1.0" encoding="UTF-8" ?>\n<items>\n<playlist_name>IPTV</playlist_name>\n<all_region></all_region>\n')
         f.close()
-        f=open('nStream.xml','a')
+        f=open('git/nStream.xml','a')
         for i in good:
             f.write("<channel>\n<title><![CDATA[%s]]></title>\n<logo_30x30><![CDATA[]]></logo_30x30>\n<description></description>\n<stream_url><![CDATA[%s]]></stream_url>\n</channel>\n" % (i,good[i])) 
         f.close()
@@ -63,38 +63,37 @@ def list():
         # call(["git","commit","-am","'ok'"])
         # call(["ssh-add"])
         # call(["git","push","-u","origin","master"])
-        f=open('iptv.m3u', 'w')
+        f=open('git/iptv.m3u', 'w')
         f.write("#EXTM3U\n")
         f.close()
         for i in good:
-            f=open('iptv.m3u', 'a')
+            f=open('git/iptv.m3u', 'a')
             f.write("#EXTINF:-1,"+i+"\n"+good[i]+"\n")
             f.close()
-        # ssh=open(".ssh/id_rsa.pub","w")
-        # ssh.write("ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5uihQFeVnpj+ZapmKFJO1K5AjTBujXs22wN+yJklx0YCI7statYU0oyhs8cBKG09V+fhFYSLZA494furJqI+k+h7O1ho8PSf+iDTauiP8V9kyniAiJ0FabSU/pnooxMOVtxmpjBqHGp2MYYiYKzzsSxusYbK6xo4gOaWZzbPy5v8rBsIGbQh1mcw/Jy+81PkwmtULFY58UXTBRjSV+pcK+LG9OEJqa5QRzcnEHq98lsx424QrcVexHyllzmlWq8Qwgvz7cHUpXsZWmIF0xT9yUW7UEKJsXbv8AJdlxULbU9ExQcu/6xCf8fOuZfMH7iBJrauXYSQT7wfaKrAvTS6j taketa@taketa")
-        # ssh.close()
-        # os.chdir("app/git")
+        ssh=open(".ssh/id_rsa.pub","w")
+        ssh.write("ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC5uihQFeVnpj+ZapmKFJO1K5AjTBujXs22wN+yJklx0YCI7statYU0oyhs8cBKG09V+fhFYSLZA494furJqI+k+h7O1ho8PSf+iDTauiP8V9kyniAiJ0FabSU/pnooxMOVtxmpjBqHGp2MYYiYKzzsSxusYbK6xo4gOaWZzbPy5v8rBsIGbQh1mcw/Jy+81PkwmtULFY58UXTBRjSV+pcK+LG9OEJqa5QRzcnEHq98lsx424QrcVexHyllzmlWq8Qwgvz7cHUpXsZWmIF0xT9yUW7UEKJsXbv8AJdlxULbU9ExQcu/6xCf8fOuZfMH7iBJrauXYSQT7wfaKrAvTS6j taketa@taketa")
+        ssh.close()
+        os.chdir("git")
         
-        # call(["git","init"])
-        # call(["git", "remote", "add", "taketa", "git@github.com:taketa/iptv.git"])
-        # call(["git","add","."]) 
-        # call(["git","pull","taketa","master"])
         
-        # call(["git","commit","-am","ok"])
+        call(["git", "remote", "add", "taketa", "git@github.com:taketa/iptv.git"])
+        call(["git","add","."]) 
+        call(["git","commit","-am","ok"])
+        call(["git","pull","taketa","master"])
+        
+        
 
-        # call(["git","push","-u","taketa","master"])
+        call(["git","push","-u","taketa","master"])
         return 
     getm3()
+
    
-    return send_file("iptv.m3u")
+    return "ok"
     # return send_file('iptv.m3u')
     
 
 
 
-
-if __name__=="__main__":
-    app.run()
 
 
 

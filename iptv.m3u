@@ -1,3 +1,17 @@
 #EXTM3U
 #EXTINF:-1,100% News
 http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8
+#EXTINF:-1,15 канал (Червоноград)
+http://91.192.180.66:1935/tv-channels/stream02/playlist.m3u8
+#EXTINF:-1,24 Украiна
+http://109.68.190.192:1935/WEB_Ukraine24/Ukraine24.stream/playlist.m3u8
+#EXTINF:-1,21+ (Чебоксары)
+rtmp://77.240.152.166/live/live1
+#EXTINF:-1,2+2/9 канал UA
+http://edge.hitechstreaming.com/hls/9tv_hq.m3u8
+#EXTINF:-1,1HD
+http://80.250.191.10:1935/live/hlsstream343/playlist.m3u8
+#EXTINF:-1,12 Канал (Омск)
+http://player.bonus-tv.ru:7000/mainfest-all.m3u8
+#EXTINF:-1,21 канал (Ужгород)
+rtmp://213.174.8.15:1935/live/danio

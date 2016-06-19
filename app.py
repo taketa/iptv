@@ -86,7 +86,7 @@ def list():
         
 
   #       call("git push origin master",shell=True)
-  #       return "ok"
+        return "ok"
     getm3()
 
    

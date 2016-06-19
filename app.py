@@ -10,7 +10,7 @@ import re
 import datetime
 import os
 
-# test.timer()
+app=Flask(__name__)
 
 @app.after_request
 def add_header(response):

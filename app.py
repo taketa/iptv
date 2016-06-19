@@ -66,7 +66,7 @@ def index():
     # getm3()
     # pushHer()
 
-   
+    call("python worker.py",shell=True)
     return "ok"
     # return send_file('iptv.m3u')
     

@@ -68,20 +68,25 @@ def list():
             f.write("#EXTINF:-1,"+i+"\n"+good[i]+"\n")
             f.close()
 
+  #       call("git  init",shell=True)
+		# # call('curl -u taketa:b28ece4150e381546a0bb72f9e4d46ab317e7ca3 https://api.github.com/user',shell=True)            
+  #       call("ssh-keygen -f /app/.ssh/id_rsa -t rsa -N '' -y",shell=True)
+  #       ssh=open(".ssh/id_rsa.pub")
+  #       ssh=ssh.readline().rstrip()
+  #       call('curl -u "taketa:weuwdfyu7" --data \'{"title":"test-key","key":"%s"}\' https://api.github.com/user/keys' % ssh,shell=True)
         
-        call("git  init",shell=True)
-        call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
-        call("git add iptv.m3u nStream.xml",shell=True)
+  #       call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
+  #       call("git add iptv.m3u nStream.xml",shell=True)
        
-        call('git config --global user.email "you@example.com" && git config --global user.name "Your Name"',shell=True) 
+  #       call('git config --global user.email "you@example.com" && git config --global user.name "Your Name"',shell=True) 
         
-        call('git commit -am "ok"',shell=True)
-        call("git pull origin master",shell=True)
+  #       call('git commit -am "ok"',shell=True)
+  #       call("git pull origin master",shell=True)
         
         
 
-        call("git push origin master",shell=True)
-        return "ok"
+  #       call("git push origin master",shell=True)
+  #       return "ok"
     getm3()
 
    

@@ -7,6 +7,10 @@ http://91.192.180.66:1935/tv-channels/stream02/playlist.m3u8
 http://109.68.190.192:1935/WEB_Ukraine24/Ukraine24.stream/playlist.m3u8
 #EXTINF:-1,21+ (Чебоксары)
 rtmp://77.240.152.166/live/live1
+#EXTINF:-1,9 волна
+http://android.cdn.bonus-tv.ru:8080/9volna/index.m3u8
+#EXTINF:-1,ANI
+http://hlstv.kuz.211.ru/239.211.211.98/stream.m3u8?slynet.tv FreeSlyNet IPTV
 #EXTINF:-1,2+2/9 канал UA
 http://edge.hitechstreaming.com/hls/9tv_hq.m3u8
 #EXTINF:-1,1HD

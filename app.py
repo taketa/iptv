@@ -64,7 +64,7 @@ def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
 @app.route('/')
 def index():
     getm3()
-    # pushHer()
+    pushHer()
 
    
     return "ok"

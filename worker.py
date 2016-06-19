@@ -1,8 +1,5 @@
 # -- coding: utf-8 --
-from flask import render_template, request, jsonify, Flask
-import json
-from langdetect import detect_langs
-from flask import send_file
+
 from subprocess import call
 import urllib2
 from subprocess import Popen, PIPE

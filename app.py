@@ -65,8 +65,8 @@ app=Flask(__name__)
 def index():
     # getm3()
     # pushHer()
-
-    call("python worker.py",shell=True)
+    pid = subprocess.Popen([sys.executable, "python worker.py"])
+    # call("python worker.py",shell=True)
     return "ok"
     # return send_file('iptv.m3u')
     

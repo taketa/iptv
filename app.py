@@ -36,7 +36,7 @@ def list():
     	else: return "bad"
     
     def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
-        m3=open("git/forTest.m3u")
+        m3=open("gitt/forTest.m3u")
         # m3=urllib2.urlopen(url)
         m3=m3.read()    
         out=m3.split("\n#EXTINF:-1,")
@@ -51,10 +51,10 @@ def list():
             if test=="good":
                 good[i[0]]=i[1]
         
-        f=open('git/nStream.xml','w')
+        f=open('gitt/nStream.xml','w')
         f.write('<?xml version="1.0" encoding="UTF-8" ?>\n<items>\n<playlist_name>IPTV</playlist_name>\n<all_region></all_region>\n')
         f.close()
-        f=open('git/nStream.xml','a')
+        f=open('gitt/nStream.xml','a')
         for i in good:
             f.write("<channel>\n<title><![CDATA[%s]]></title>\n<logo_30x30><![CDATA[]]></logo_30x30>\n<description></description>\n<stream_url><![CDATA[%s]]></stream_url>\n</channel>\n" % (i,good[i])) 
         f.close()
@@ -63,11 +63,11 @@ def list():
         # call(["git","commit","-am","'ok'"])
         # call(["ssh-add"])
         # call(["git","push","-u","origin","master"])
-        f=open('git/iptv.m3u', 'w')
+        f=open('gitt/iptv.m3u', 'w')
         f.write("#EXTM3U\n")
         f.close()
         for i in good:
-            f=open('git/iptv.m3u', 'a')
+            f=open('gitt/iptv.m3u', 'a')
             f.write("#EXTINF:-1,"+i+"\n"+good[i]+"\n")
             f.close()
         ssh=open(".ssh/id_rsa.pub","w")
@@ -84,7 +84,7 @@ def list():
         
 
         call(["git","push","-u","taketa","master"])
-        return 
+        return "ok"
     getm3()
 
    

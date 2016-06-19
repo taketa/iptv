@@ -32,17 +32,8 @@ def list():
         # "-v","error",
         stdout, stderr = p.communicate()
         test=re.findall(',\s.*kb/s',stderr)
-        try:
-
-            test[0].split(" ")[-2]
-        except IndexError:
-            return "bad"
-        else:
-            test=test[0].split(" ")[-2]
-            if int(test)>50  and "Unsupported codec" not in stderr:
-                return  "good %s" % test
-            else: 
-                return "bad %s" % test
+        if test: return "good %s" % test
+    	else: return "bad %s" % test
     
     # def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
     #     m3=open("app/git/forTest.m3u")

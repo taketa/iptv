@@ -69,15 +69,15 @@ def list():
             f.close()
 
         
-        call(["git", "init"])
-        call(["git", "remote", "add", "taketa", "git@github.com:taketa/iptv.git"])
+        
+        call(["git", "remote", "set-url", "origin", "git@github.com:taketa/iptv.git"])
         call(["git","add","--all"]) 
         call(["git","commit","-am","ok"])
-        call(["git","pull","taketa","master"])
+        call(["git","pull","origin","master"])
         
         
 
-        call(["git","push","-u","taketa","master"])
+        call(["git","push","origin","master"])
         return "ok"
     getm3()
 

@@ -1,44 +1,19 @@
 # -- coding: utf-8 --
-
+from flask import request
 from subprocess import call
 import urllib2
 from subprocess import Popen, PIPE
 import re 
 import datetime
 import os
+import requests
+import json
 
-def pushHer():
-	call("yes|ssh-keygen -f /app/.ssh/id_rsa -t rsa -N ''",shell=True)
-	ssh=open("/app/.ssh/id_rsa.pub")
-	ssh=ssh.readline().rstrip()
-	call('curl -u "taketa:weuwdfyu7" --data \'{"title":"test-key","key":"%s"}\' https://api.github.com/user/keys' % ssh,shell=True)
-	call("eval 'ssh-agent -s'",shell=True)
-	# call("ssh-add ~/.ssh/id_rsa",shell=True)
-
-	# call("yes|ssh -T git@github.com",shell=True)
+def push():
+	f=open('gitPush/iptv.m3u')
 	
-
-	
-
-	# call("eval $(ssh-agent)",shell=True)
-	
-	
-	
-	
-	
-
-	
-	os.chdir("gitPush")
-	call("git init",shell=True)
-	call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
-	call("git add .",shell=True)
-	call('git config --global user.email "853211b@gmail.com" && git config --global user.name "taketa"',shell=True) 
-	# call("git pull origin master",shell=True)
-	# call('git commit -am "ok"',shell=True)
-	# call("git pull origin master",shell=True)
-	call('git commit -am "ok"',shell=True)
-	call("git push origin master",shell=True)
-	return "ok"
+	r = requests.post("http://127.0.0.1:5000/data", data=f)
+	f.close()
 def run(url):
 	p = Popen(["timeout","20s","ffprobe",  url], stdout=PIPE, stderr=PIPE)
 	stdout, stderr = p.communicate()
@@ -77,7 +52,8 @@ def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
 	    f.write("#EXTINF:-1,"+i+"\n"+good[i]+"\n")
 	f.close()
 	
+	
     return "ok"
 
 getm3()
-pushHer()
+push()

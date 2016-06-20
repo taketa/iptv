@@ -11,7 +11,7 @@ import json
 
 def push():
 	f=open('gitPush/iptv.m3u')
-	url = url_for('data')
+	url = url_for('.data')
 	r = requests.post(url, data=f)
 	f.close()
 def run(url):

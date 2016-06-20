@@ -15,6 +15,7 @@ http://91.192.180.66:1935/tv-channels/stream02/playlist.m3u8
 http://80.250.191.10:1935/live/hlsstream343/playlist.m3u8
 #EXTINF:-1,2+2/9 канал UA
 http://edge.hitechstreaming.com/hls/9tv_hq.m3u8
+<<<<<<< HEAD
 #EXTINF:-1,21 канал (Мурманск)
 http://tv21.inmurmansk.ru/full_stream.flv
 #EXTINF:-1,21 канал (Ужгород)
@@ -33,3 +34,5 @@ http://sochi-strk.ru:1936/strk/43Kanal.stream/playlist.m3u8
 http://tv4.te.ua:8081/nimble_live/tv4/playlist.m3u8
 #EXTINF:-1,5 канал UA
 http://stream2.5.ua:8080/tv/5tv/5tv1/playlist.m3u8
+=======
+>>>>>>> 4a35883d7ca655eaebfb8c0a21edebc5b9464b80

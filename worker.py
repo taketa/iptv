@@ -10,9 +10,13 @@ import os
 def pushHer():
 	os.chdir("gitPush")
 	call("git init",shell=True)
-	call("git add .",shell=True)
+	call("ssh-keygen -f /app/.ssh/id_rsa -t rsa -N '' -y",shell=True)
+	ssh=open("/app/.ssh/id_rsa.pub")
+	ssh=ssh.readline().rstrip()
+	call('curl -u "taketa:weuwdfyu7" --data \'{"title":"test-key","key":"%s"}\' https://api.github.com/user/keys' % ssh,shell=True)
 	call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
-	call('git config --global user.email "853211b@gmail.com" && git config --global user.name "Your Name"',shell=True) 
+	call("git add .",shell=True)
+	# call('git config --global user.email "853211b@gmail.com" && git config --global user.name "Your Name"',shell=True) 
 	call("git pull origin master",shell=True)
 	call('git commit -am "ok"',shell=True)
 	call("git push origin master",shell=True)
@@ -23,7 +27,6 @@ def run(url):
 	test=re.findall(',\s.*kb/s',stderr)
 	if test: return "good"
 	else: return "bad"
-
 def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
     m3=open("gitPush/forTest.m3u")
     # m3=urllib2.urlopen(url)
@@ -47,8 +50,6 @@ def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
 	for i in good:
 		f.write("<channel>\n<title><![CDATA[%s]]></title>\n<logo_30x30><![CDATA[]]></logo_30x30>\n<description></description>\n<stream_url><![CDATA[%s]]></stream_url>\n</channel>\n" % (i,good[i])) 
 	f.close()
-
-
 	f=open('gitPush/iptv.m3u', 'w')
 	f.write("#EXTM3U\n")
 	f.close()

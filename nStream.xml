@@ -15,6 +15,27 @@
 <stream_url><![CDATA[http://91.192.180.66:1935/tv-channels/stream02/playlist.m3u8]]></stream_url>
 </channel>
 <channel>
+<<<<<<< HEAD
+=======
+<title><![CDATA[24 Украiна]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://109.68.190.192:1935/WEB_Ukraine24/Ukraine24.stream/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[21+ (Чебоксары)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[rtmp://77.240.152.166/live/live1]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[9 волна]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://android.cdn.bonus-tv.ru:8080/9volna/index.m3u8]]></stream_url>
+</channel>
+<channel>
+>>>>>>> e4831cd8ab9978b048453c5ee258919adf75be2f
 <title><![CDATA[2+2/9 канал UA]]></title>
 <logo_30x30><![CDATA[]]></logo_30x30>
 <description></description>

@@ -10,16 +10,5 @@ def index():
 
 	pid = Popen(["python worker.py"], shell=True,stdin=None, stdout=None, stderr=None, close_fds=True)  
 	return "ok"
-@app.route("/dataWork",methods = ['POST'])
-def dat():
-	if request.method == 'POST':
-		
-		f=open("gitPush/iptv.m3u","w")
-		f.write(request.data)
-		f.close()
-	return "ok"
-@app.route("/dataGet")
-def dataGet():
-	return send_file("gitPush/iptv.m3u")
 if __name__=="__main__":
 	app.run()

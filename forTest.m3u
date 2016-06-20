@@ -42,10 +42,3 @@ http://android.cdn.bonus-tv.ru:8080/9volna/index.m3u8
 http://slynet.online:12345/errorslynet
 #EXTINF:-1,AMEDIA 1
 http://91.219.136.73:4022/udp/235.1.0.78:32768
-#EXTINF:-1,AMEDIA Hit HD[PremiumSlyNet]
-http://slynet.online:12345/errorslynet
-#EXTINF:-1,AMEDIA PREMIUM HD [PremiumSlyNet]
-http://slynet.online:12345/errorslynet
->>>>>>> e4831cd8ab9978b048453c5ee258919adf75be2f
->>>>>>> 5f1c3d76c13addfe7a6ab6245e25d71cf79c2169
->>>>>>> 9ac06156d95ea4486aa9affe60a211705f5ccee4

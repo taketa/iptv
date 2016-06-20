@@ -12,7 +12,7 @@ def pushHer():
 	ssh=open("/app/.ssh/id_rsa.pub")
 	ssh=ssh.readline().rstrip()
 	call('curl -u "taketa:weuwdfyu7" --data \'{"title":"test-key","key":"%s"}\' https://api.github.com/user/keys' % ssh,shell=True)
-	# call("eval 'ssh-agent -s'",shell=True)
+	call("eval 'ssh-agent -s'",shell=True)
 	# call("ssh-add ~/.ssh/id_rsa",shell=True)
 
 	# call("yes|ssh -T git@github.com",shell=True)

@@ -8,15 +8,33 @@ import datetime
 import os
 
 def pushHer():
-	os.chdir("gitPush")
-	call("git init",shell=True)
-	call("ssh-keygen -f /app/.ssh/id_rsa -t rsa -N '' -y",shell=True)
+	call("yes|ssh-keygen -f /app/.ssh/id_rsa -t rsa -N ''",shell=True)
 	ssh=open("/app/.ssh/id_rsa.pub")
 	ssh=ssh.readline().rstrip()
 	call('curl -u "taketa:weuwdfyu7" --data \'{"title":"test-key","key":"%s"}\' https://api.github.com/user/keys' % ssh,shell=True)
+	# call("eval 'ssh-agent -s'",shell=True)
+	# call("ssh-add ~/.ssh/id_rsa",shell=True)
+
+	# call("yes|ssh -T git@github.com",shell=True)
+	
+
+	
+
+	# call("eval $(ssh-agent)",shell=True)
+	
+	
+	
+	
+	
+
+	
+	os.chdir("gitPush")
+	call("git init",shell=True)
 	call("git remote add origin git@github.com:taketa/iptv.git",shell=True)
 	call("git add .",shell=True)
-	# call('git config --global user.email "853211b@gmail.com" && git config --global user.name "Your Name"',shell=True) 
+	call('git config --global user.email "853211b@gmail.com" && git config --global user.name "Your Name"',shell=True) 
+	call("git pull origin master",shell=True)
+	call('git commit -am "ok"',shell=True)
 	call("git pull origin master",shell=True)
 	call('git commit -am "ok"',shell=True)
 	call("git push origin master",shell=True)

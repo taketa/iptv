@@ -11,8 +11,8 @@ import json
 
 def push():
 	f=open('gitPush/iptv.m3u')
-	
-	r = requests.post("data", data=f)
+	url = url_for('data')
+	r = requests.post(url, data=f)
 	f.close()
 def run(url):
 	p = Popen(["timeout","20s","ffprobe",  url], stdout=PIPE, stderr=PIPE)

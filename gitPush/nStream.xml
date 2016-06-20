@@ -15,14 +15,56 @@
 <stream_url><![CDATA[http://91.192.180.66:1935/tv-channels/stream02/playlist.m3u8]]></stream_url>
 </channel>
 <channel>
-<title><![CDATA[12 Канал (Омск)]]></title>
+<title><![CDATA[24 Украiна]]></title>
 <logo_30x30><![CDATA[]]></logo_30x30>
 <description></description>
-<stream_url><![CDATA[http://player.bonus-tv.ru:7000/mainfest-all.m3u8]]></stream_url>
+<stream_url><![CDATA[http://109.68.190.192:1935/WEB_Ukraine24/Ukraine24.stream/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[21+ (Чебоксары)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[rtmp://77.240.152.166/live/live1]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[24 Южный (Одесса)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://iphone-streaming.ustream.tv/uhls/19272199/streams/live/iphone/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[2+2/9 канал UA]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://edge.hitechstreaming.com/hls/9tv_hq.m3u8]]></stream_url>
 </channel>
 <channel>
 <title><![CDATA[1HD]]></title>
 <logo_30x30><![CDATA[]]></logo_30x30>
 <description></description>
 <stream_url><![CDATA[http://80.250.191.10:1935/live/hlsstream343/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[12 Канал (Омск)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://player.bonus-tv.ru:7000/mainfest-all.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[21 канал (Ужгород)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[rtmp://213.174.8.15:1935/live/danio]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[4TV (Украина)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://tv4.te.ua:8081/nimble_live/tv4/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[43 Канал HD]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://sochi-strk.ru:1936/strk/43Kanal.stream/playlist.m3u8]]></stream_url>
 </channel>

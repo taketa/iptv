@@ -11,8 +11,8 @@ import json
 
 def push():
 	f=open('gitPush/iptv.m3u')
-	url = url_for('.data')
-	r = requests.post(url, data=f)
+	
+	r = requests.post("https://safe-shore-24742.herokuapp.com/data", data=f)
 	f.close()
 def run(url):
 	p = Popen(["timeout","20s","ffprobe",  url], stdout=PIPE, stderr=PIPE)

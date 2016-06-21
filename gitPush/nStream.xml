@@ -8,3 +8,63 @@
 <description></description>
 <stream_url><![CDATA[http://85.238.112.40:8810/hls_sec/239.33.16.32-.m3u8]]></stream_url>
 </channel>
+<channel>
+<title><![CDATA[15 канал (Червоноград)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://91.192.180.66:1935/tv-channels/stream02/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[5+ ДТС]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://78.140.209.14:1935/unost/5/chunklist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[24 Украiна]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://109.68.190.192:1935/WEB_Ukraine24/Ukraine24.stream/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[8 Канал (Красноярск)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://80.65.18.213/playlist_bonus_tv_region.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[7 канал (Одесса)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://85.238.112.10:8810/hls_sec/239.33.15.14-.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[21+ (Чебоксары)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[rtmp://77.240.152.166/live/live1]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[24 Южный (Одесса)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://iphone-streaming.ustream.tv/uhls/19272199/streams/live/iphone/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[21 канал (Ужгород)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[rtmp://213.174.8.15:1935/live/danio]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[4TV (Украина)]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://tv4.te.ua:8081/nimble_live/tv4/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[43 Канал HD]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://sochi-strk.ru:1936/strk/43Kanal.stream/playlist.m3u8]]></stream_url>
+</channel>

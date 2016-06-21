@@ -1,4 +1,5 @@
 # -- coding: utf-8 --
+#!venv/bin/python
 from flask import Flask,request
 from subprocess import Popen
 import json

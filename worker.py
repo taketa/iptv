@@ -14,7 +14,10 @@ def push():
 	
 	r = requests.post("http://iptvtaketa.herokuapp.com/", data=f)
 	f.close()
+<<<<<<< HEAD
 	print("send ok")
+=======
+>>>>>>> 462c8f13eb31304cee17c1ad5d2fc052efbed508
 	return "ok"
 def run(url):
 	p = Popen(["timeout","20s","ffprobe",  url], stdout=PIPE, stderr=PIPE)
@@ -22,6 +25,7 @@ def run(url):
 	test=re.findall(',\s.*kb/s',stderr)
 	if test: return "good"
 	else: return "bad"
+	return "ok"
 def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
     m3=open("gitPush/forTest.m3u")
     # m3=urllib2.urlopen(url)

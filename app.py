@@ -5,15 +5,16 @@ import json
 from flask import send_file
 
 app=Flask(__name__)
-@app.route("/",methods = ['POST'])
+@app.route("/",methods = ['GET','POST'])
 def dat():
 	if request.method == 'POST':
 		
 		f=open("iptv.m3u","w")
 		f.write(request.data)
 		f.close()
+	
 	return "ok"
-@app.route("/dataGet")
+@app.route("/get")
 def dataGet():
 	return send_file("iptv.m3u")
 if __name__=="__main__":

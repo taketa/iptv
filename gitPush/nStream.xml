@@ -21,6 +21,12 @@
 <stream_url><![CDATA[http://78.140.209.14:1935/unost/5/chunklist.m3u8]]></stream_url>
 </channel>
 <channel>
+<title><![CDATA[Brodilo TV HD]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://brodilo.tv/channel.php]]></stream_url>
+</channel>
+<channel>
 <title><![CDATA[24 Украiна]]></title>
 <logo_30x30><![CDATA[]]></logo_30x30>
 <description></description>
@@ -49,6 +55,18 @@
 <logo_30x30><![CDATA[]]></logo_30x30>
 <description></description>
 <stream_url><![CDATA[http://iphone-streaming.ustream.tv/uhls/19272199/streams/live/iphone/playlist.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[2+2/9 канал UA]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://edge.hitechstreaming.com/hls/9tv_hq.m3u8]]></stream_url>
+</channel>
+<channel>
+<title><![CDATA[1HD]]></title>
+<logo_30x30><![CDATA[]]></logo_30x30>
+<description></description>
+<stream_url><![CDATA[http://80.250.191.10:1935/live/hlsstream343/playlist.m3u8]]></stream_url>
 </channel>
 <channel>
 <title><![CDATA[21 канал (Ужгород)]]></title>

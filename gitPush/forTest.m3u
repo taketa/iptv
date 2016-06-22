@@ -23,33 +23,3 @@ rtmp://213.174.8.15:1935/live/danio
 rtmp://77.240.152.166/live/live1
 #EXTINF:-1,24 Украiна
 http://109.68.190.192:1935/WEB_Ukraine24/Ukraine24.stream/playlist.m3u8
-#EXTINF:-1,24 Южный (Одесса)
-http://iphone-streaming.ustream.tv/uhls/19272199/streams/live/iphone/playlist.m3u8
-#EXTINF:-1,26 Регион (Ставрополь)
-rtmp://26region.vintera.tv:1935/26region/26region1
-#EXTINF:-1,43 Канал HD
-http://sochi-strk.ru:1936/strk/43Kanal.stream/playlist.m3u8
-#EXTINF:-1,4TV (Украина)
-http://tv4.te.ua:8081/nimble_live/tv4/playlist.m3u8
-#EXTINF:-1,5 канал UA
-http://stream2.5.ua:8080/tv/5tv/5tv1/playlist.m3u8
-#EXTINF:-1,5+ ДТС
-http://78.140.209.14:1935/unost/5/chunklist.m3u8
-#EXTINF:-1,7 канал (Одесса)
-http://85.238.112.10:8810/hls_sec/239.33.15.14-.m3u8
-#EXTINF:-1,8 Канал (Владивосток)
-rtmp://37.187.27.118/live/livestream2
-#EXTINF:-1,8 Канал (Владивосток) HD
-rtmp://37.187.27.118/live/livestream3
-#EXTINF:-1,8 Канал (Красноярск)
-http://80.65.18.213/playlist_bonus_tv_region.m3u8
-#EXTINF:-1,ATR
-http://str1.atr.ua/atr/live1/index.m3u8
-#EXTINF:-1,AnyDay 3D
-http://streamer1.cdn.3dsmart.tv/hls/anyday.tv.3d/stream.m3u8
-#EXTINF:-1,AnyDay HD
-http://streamer1.cdn.3dsmart.tv/hls/anyday.tv.hd/stream.m3u8
-#EXTINF:-1,BIM TV (Казань)
-rtmp://bimru.ru:11935/live/video2
-#EXTINF:-1,Brodilo TV HD
-http://brodilo.tv/channel.php

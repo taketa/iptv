@@ -51,7 +51,7 @@ def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
 	f=open('gitPush/iptv.m3u', 'a')
 	for i in good:
 	    
-	    f.write("#EXTINF:0,"+i+"\n"+good[i]+"\n")
+	    f.write("#EXTINF:-1,"+i+"\n"+good[i]+"\n")
 	f.close()
 	
 	

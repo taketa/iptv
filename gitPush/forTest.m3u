@@ -17,5 +17,3 @@ http://80.250.191.10:1935/live/hlsstream343/playlist.m3u8
 http://edge.hitechstreaming.com/hls/9tv_hq.m3u8
 #EXTINF:-1,21 канал (Мурманск)
 http://tv21.inmurmansk.ru/full_stream.flv
-#EXTINF:-1,21 канал (Ужгород)
-rtmp://213.174.8.15:1935/live/danio

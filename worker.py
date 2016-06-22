@@ -23,10 +23,10 @@ def run(url):
 	if test: return "good"
 	else: return "bad"
 def getm3(url="http://iptv.slynet.tv/FreeSlyNet.m3u"):
-    m3=open("gitPush/forTest.m3u")
-    # m3=urllib2.urlopen(url)
+    # m3=open("gitPush/forTest.m3u")
+    m3=urllib2.urlopen(url)
     m3=m3.read()    
-    out=m3.split("\n#EXTINF:-1,")
+    out=m3.split("\n#EXTINF:0,")
     out=[i.split("\n") for i in out if "PremiumSlyNet" not in i]
     out=[i for i in out if len(i)==2]
     out=[i for i in out if "===" not in i[0]]

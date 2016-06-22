@@ -21,5 +21,3 @@ http://tv21.inmurmansk.ru/full_stream.flv
 rtmp://213.174.8.15:1935/live/danio
 #EXTINF:-1,21+ (Чебоксары)
 rtmp://77.240.152.166/live/live1
-#EXTINF:-1,24 Украiна
-http://109.68.190.192:1935/WEB_Ukraine24/Ukraine24.stream/playlist.m3u8
